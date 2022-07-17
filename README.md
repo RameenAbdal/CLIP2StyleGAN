@@ -60,7 +60,7 @@ Disentangle the entangled directions. For testing, two folders representing enta
 python optimize_dir.py --path_image_data [path to the image folder] --path_features [path to the CLIP Image encoder features] --pca_axis [index of the principal axis]
 ```
 
-## Edits
+## Image Editing using extracted directions
 
 Perform the edits on Faces and Cars. StyleGAN2 pretrained models can be downloaded [here](https://drive.google.com/drive/folders/1hAYjqu0JW_PBfL8fV96g5x9yjQEslkY0?usp=sharing).
 
