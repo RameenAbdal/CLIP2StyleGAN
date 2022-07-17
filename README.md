@@ -65,7 +65,7 @@ python optimize_dir.py --path_image_data [path to the image folder] --path_featu
 Perform the edits on Faces and Cars. StyleGAN2 pretrained models can be downloaded [here](https://drive.google.com/drive/folders/1hAYjqu0JW_PBfL8fV96g5x9yjQEslkY0?usp=sharing).
 
 ``` bash
-cd edits
+cd edits_sg
 python edit_faces.py --edit_type ['to_male', 'to_female', 'glasses','smile', 'kids', 'beard'] --ckpt [path to checkpoint]
 python edit_cars.py --edit_tyle ['scrap_to_car', 'red_car', 'capri', 'race_car', 'blazer'] --ckpt [path to checkpoint]
 ```
