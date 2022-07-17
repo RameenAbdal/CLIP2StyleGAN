@@ -34,7 +34,7 @@ conda install --yes -c pytorch pytorch=1.7.1 torchvision cudatoolkit=11.0
 pip install ftfy regex tqdm natsort
 ```
 
-Download the StyleGAN2 models, test data and encoded features [here]().
+Download the StyleGAN2 models, test data and encoded features [here](https://drive.google.com/drive/folders/1L0iIr2Z0QzDIRrq6iWyOalKP8NFkuX8I?usp=sharing).
 ## Dominant CLIP Embedding
 ### Computing the PCA directions
 
@@ -47,14 +47,14 @@ python compute_pca.py image_path [path to the Dataset (Real/Sampled)] --extracte
 ## CLIP based unsupervised labeling and refining
 ### Predicting the labels
 
-Compute the labels given an image folder. For testing, two folders representing first two principal components can be downloaded [here](). 
+Compute the labels given an image folder. For testing, two folders representing first two principal components can be downloaded [here](https://drive.google.com/drive/folders/1A9q83NksbMCau6rVTFfwfo_KhvC-rU5_?usp=sharing). 
 
 ``` bash
 python text_optimize.py --path [path to the image folder]
 ```
 ### Disentangling the directions
 
-Disentangle the entangled directions. For testing, two folders representing entangled edits mentioned in the paper can be downloaded [here]().
+Disentangle the entangled directions. For testing, two folders representing entangled edits mentioned in the paper can be downloaded [here](https://drive.google.com/drive/folders/1Hlept8V1UQklk4FfCuILeA-lwjRzlD3S?usp=sharing).
 
 ``` bash
 python optimize_dir.py --path_image_data [path to the image folder] --path_features [path to the CLIP Image encoder features] --pca_axis [index of the principal axis]
@@ -62,7 +62,7 @@ python optimize_dir.py --path_image_data [path to the image folder] --path_featu
 
 ## Edits
 
-Perform the edits on Faces and Cars. StyleGAN2 pretrained models can be downloaded [here]().
+Perform the edits on Faces and Cars. StyleGAN2 pretrained models can be downloaded [here](https://drive.google.com/drive/folders/1hAYjqu0JW_PBfL8fV96g5x9yjQEslkY0?usp=sharing).
 
 ``` bash
 cd edits
@@ -72,7 +72,7 @@ python edit_cars.py --edit_tyle ['scrap_to_car', 'red_car', 'capri', 'race_car',
 
 ## Comparisons
 
-Download the data (here)[] to compute the CLIP edit scores (compared with GANSpace) and Disentanglement results.
+Download the data [here](https://drive.google.com/drive/folders/1QQlRO10NPlHrpVQeuGyvLCnlJ7pCYykK?usp=sharing) to compute the CLIP edit scores (compared with GANSpace) and Disentanglement results.
 
 ``` bash
 python test_clip_scores.py
