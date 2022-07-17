@@ -67,7 +67,7 @@ Perform the edits on Faces and Cars. StyleGAN2 pretrained models can be download
 ``` bash
 cd edits_sg
 python edit_faces.py --edit_type ['to_male', 'to_female', 'glasses','smile', 'kids', 'beard'] --ckpt [path to checkpoint]
-python edit_cars.py --edit_tyle ['scrap_to_car', 'red_car', 'capri', 'race_car', 'blazer'] --ckpt [path to checkpoint]
+python edit_cars.py --edit_type ['scrap_to_car', 'red_car', 'capri', 'race_car', 'blazer'] --ckpt [path to checkpoint]
 ```
 
 ## Comparisons
