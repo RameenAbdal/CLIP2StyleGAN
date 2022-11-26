@@ -29,7 +29,7 @@ cd CLIP2StyleGAN/
 Install dependencies.
 ```bash
 conda create --n CLIP2StyleGAN python=3.7
-conda actitivate CLIP2StyleGAN
+conda activate CLIP2StyleGAN
 conda install --yes -c pytorch pytorch=1.7.1 torchvision cudatoolkit=11.0
 pip install ftfy regex tqdm natsort
 ```
